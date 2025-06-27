@@ -1,0 +1,212 @@
+{
+  "match_info": {
+    "home_team_id": "acbb6a5b",
+    "away_team_id": "2ac661d9",
+    "match_date": "2025-01-15"
+  },
+  "predictions": {
+    "target_home_over_2_5": {
+      "description": "Домашняя команда забьет больше 2.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.9120474290115805,
+        "Да": 0.08795257098841947
+      }
+    },
+    "target_corners_over_7_5": {
+      "description": "Больше 7.5 угловых в матче",
+      "prediction": 1,
+      "prediction_label": "Да",
+      "probabilities": {
+        "Нет": 0.24331294679396775,
+        "Да": 0.7566870532060322
+      }
+    },
+    "target_over_0_5": {
+      "description": "Больше 0.5 голов в матче",
+      "prediction": 1,
+      "prediction_label": "Да",
+      "probabilities": {
+        "Нет": 0.03618330420606697,
+        "Да": 0.963816695793933
+      }
+    },
+    "target_away_over_2_5": {
+      "description": "Гостевая команда забьет больше 2.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.8141767028779685,
+        "Да": 0.18582329712203155
+      }
+    },
+    "target_home_over_3_5": {
+      "description": "Домашняя команда забьет больше 3.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.9740099787192682,
+        "Да": 0.025990021280731797
+      }
+    },
+    "target_home_over_1_5": {
+      "description": "Домашняя команда забьет больше 1.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.870070294785424,
+        "Да": 0.12992970521457606
+      }
+    },
+    "target_corners_over_10_5": {
+      "description": "Больше 10.5 угловых в матче",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.5951654685709848,
+        "Да": 0.40483453142901515
+      }
+    },
+    "target_over_3_5": {
+      "description": "Больше 3.5 голов в матче",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.6587687617753367,
+        "Да": 0.3412312382246633
+      }
+    },
+    "target_away_over_3_5": {
+      "description": "Гостевая команда забьет больше 3.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.9185851472077413,
+        "Да": 0.08141485279225864
+      }
+    },
+    "target_over_2_5": {
+      "description": "Больше 2.5 голов в матче",
+      "prediction": 1,
+      "prediction_label": "Да",
+      "probabilities": {
+        "Нет": 0.46787994979467584,
+        "Да": 0.5321200502053242
+      }
+    },
+    "target_over_5_5": {
+      "description": "Больше 5.5 голов в матче",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.9368938547086064,
+        "Да": 0.06310614529139355
+      }
+    },
+    "target_both_teams_scored": {
+      "description": "Обе команды забьют",
+      "prediction": 1,
+      "prediction_label": "Да",
+      "probabilities": {
+        "Нет": 0.37681460743628226,
+        "Да": 0.6231853925637177
+      }
+    },
+    "target_wdl_home": {
+      "description": "Результат для домашней команды (0=поражение, 1=ничья, 2=победа)",
+      "prediction": 0,
+      "prediction_label": "Поражение дома",
+      "probabilities": {
+        "Поражение дома": 0.38546523473249794,
+        "Ничья": 0.2637647346732913,
+        "Победа дома": 0.3507700305942107
+      }
+    },
+    "target_corners_over_8_5": {
+      "description": "Больше 8.5 угловых в матче",
+      "prediction": 1,
+      "prediction_label": "Да",
+      "probabilities": {
+        "Нет": 0.31650440895879006,
+        "Да": 0.6834955910412099
+      }
+    },
+    "target_corners_over_9_5": {
+      "description": "Больше 9.5 угловых в матче",
+      "prediction": 1,
+      "prediction_label": "Да",
+      "probabilities": {
+        "Нет": 0.44625916631031337,
+        "Да": 0.5537408336896866
+      }
+    },
+    "target_away_over_1_5": {
+      "description": "Гостевая команда забьет больше 1.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.6121835569201283,
+        "Да": 0.38781644307987173
+      }
+    },
+    "target_home_over_0_5": {
+      "description": "Домашняя команда забьет больше 0.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.6117313257788695,
+        "Да": 0.3882686742211306
+      }
+    },
+    "target_over_1_5": {
+      "description": "Больше 1.5 голов в матче",
+      "prediction": 1,
+      "prediction_label": "Да",
+      "probabilities": {
+        "Нет": 0.14133220455085227,
+        "Да": 0.8586677954491477
+      }
+    },
+    "target_over_4_5": {
+      "description": "Больше 4.5 голов в матче",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.9287486552350047,
+        "Да": 0.07125134476499531
+      }
+    },
+    "target_corners_over_12_5": {
+      "description": "Больше 12.5 угловых в матче",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.7690460203268328,
+        "Да": 0.23095397967316725
+      }
+    },
+    "target_corners_over_11_5": {
+      "description": "Больше 11.5 угловых в матче",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.6658449394380813,
+        "Да": 0.3341550605619187
+      }
+    },
+    "target_away_over_0_5": {
+      "description": "Гостевая команда забьет больше 0.5 голов",
+      "prediction": 0,
+      "prediction_label": "Нет",
+      "probabilities": {
+        "Нет": 0.8128970540829783,
+        "Да": 0.18710294591702173
+      }
+    }
+  },
+  "stats_dates": {
+    "home_team_last_match": "2025-01-12",
+    "away_team_last_match": "2025-01-14"
+  }
+}
