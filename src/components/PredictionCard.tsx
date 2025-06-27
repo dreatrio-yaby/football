@@ -15,8 +15,6 @@ const PredictionCard: React.FC<PredictionCardProps> = ({
   category = 'general' 
 }) => {
   const maxProb = Math.max(...Object.values(prediction.probabilities));
-  const bestOption = Object.entries(prediction.probabilities)
-    .find(([, prob]) => prob === maxProb)?.[0];
 
   const getIcon = () => {
     if (category === 'result') return Trophy;

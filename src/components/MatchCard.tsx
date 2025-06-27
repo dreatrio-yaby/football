@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, MapPin, Trophy, TrendingUp } from 'lucide-react';
+import { Clock, MapPin } from 'lucide-react';
 import { MatchPrediction } from '../types';
 import { formatDateTime, formatProbability, getProbabilityClass, probabilityToOdds } from '../utils';
 

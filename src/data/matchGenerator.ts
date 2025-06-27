@@ -1,5 +1,5 @@
 import { MatchPrediction, Prediction } from '../types';
-import { getRandomTeams, getTeamById } from './teams';
+import { getRandomTeams } from './teams';
 import { addDays, format } from 'date-fns';
 import { generateMatchId } from '../utils';
 
@@ -108,7 +108,6 @@ function randomizePrediction(template: Prediction): Prediction {
 
 export function generateMatch(date: Date): MatchPrediction {
   const [homeTeam, awayTeam] = getRandomTeams(2);
-  const matchId = generateMatchId();
   
   // Генерируем случайное время матча
   const matchHour = Math.floor(Math.random() * 12) + 10; // 10:00 - 21:00

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Clock, MapPin, Calendar, Users, Target, Trophy, Activity, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, Clock, MapPin, Users, Target, Trophy, Activity, AlertTriangle } from 'lucide-react';
 import { useMatches } from '../contexts/MatchesContext';
 import PredictionCard from '../components/PredictionCard';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -17,25 +17,31 @@ const MatchDetailPage: React.FC = () => {
   const categorizedPredictions = useMemo(() => {
     if (!match) return {};
 
-    const categories = {
+    const categories: {
+      [key: string]: {
+        name: string;
+        icon: any;
+        predictions: Array<{ key: string; prediction: any; title: string }>;
+      };
+    } = {
       result: {
         name: 'Результат матча',
         icon: Trophy,
-        predictions: [] as Array<{ key: string; prediction: any; title: string }>
+        predictions: []
       },
       goals: {
         name: 'Голы',
         icon: Target,
-        predictions: [] as Array<{ key: string; prediction: any; title: string }>
+        predictions: []
       },
       corners: {
         name: 'Угловые',
         icon: Activity,
-        predictions: [] as Array<{ key: string; prediction: any; title: string }>
+        predictions: []
       }
     };
 
-    Object.entries(match.predictions).forEach(([key, prediction]) => {
+    Object.entries(match.predictions).forEach(([key, prediction]: [string, any]) => {
       if (key.includes('wdl')) {
         categories.result.predictions.push({ key, prediction, title: 'Исход матча' });
       } else if (key.includes('corner')) {
@@ -165,7 +171,7 @@ const MatchDetailPage: React.FC = () => {
       </div>
 
       {/* Прогнозы по категориям */}
-      {Object.entries(categorizedPredictions).map(([categoryKey, category]) => (
+      {Object.entries(categorizedPredictions).map(([categoryKey, category]: [string, any]) => (
         <div key={categoryKey} className="mb-8">
           <div className="flex items-center space-x-2 mb-4">
             <category.icon className="h-6 w-6 text-blue-600 dark:text-blue-400" />
@@ -178,7 +184,7 @@ const MatchDetailPage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {category.predictions.map(({ key, prediction, title }) => (
+            {category.predictions.map(({ key, prediction, title }: any) => (
               <PredictionCard
                 key={key}
                 prediction={prediction}
